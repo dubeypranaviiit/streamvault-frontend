@@ -58,8 +58,17 @@ const { setActiveTab } = useDashboard();
       formData.append("video", file);
       formData.append("title", title);
       formData.append("description", description);
+await api.post("/videos/upload", formData, {
+  headers: {
+    "Content-Type": "multipart/form-data",
+  },
+  withCredentials: true,   
+});
 
-      await api.post("/videos/upload", formData);
+
+
+
+      
     } catch (err) {
       console.log(err);
       setError("Upload failed. Please try again.");
