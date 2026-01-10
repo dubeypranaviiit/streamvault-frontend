@@ -1,9 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
 });
+
 
 api.interceptors.response.use(
   (res) => res,
@@ -11,5 +12,6 @@ api.interceptors.response.use(
     return Promise.reject(err);
   }
 );
-
 export default api;
+
+
