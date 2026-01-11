@@ -13,33 +13,6 @@ export default function Sidebar({ activeTab, setActiveTab }) {
      }`;
 
   return (
-//     <aside className="w-64 bg-zinc-900 border-r border-white/10 p-5">
-//       <Link
-//   to="/"
-//   className="block text-xl font-bold mb-10 text-white"
-// >
-//   StreamVault
-// </Link>
-
-
-//       <nav className="space-y-3">
-//         <button
-//           onClick={() => setActiveTab("videos")}
-//           className={tabClass("videos")}
-//         >
-//           Dashboard
-//         </button>
-
-//         {(user.role === "editor" || user.role === "admin") && (
-//           <button
-//             onClick={() => setActiveTab("upload")}
-//             className={tabClass("upload")}
-//           >
-//             Upload Video
-//           </button>
-//         )}
-//       </nav>
-//     </aside>
 <aside className="w-64 bg-zinc-950 border-r border-zinc-800 p-6">
   <Link
     to="/"
