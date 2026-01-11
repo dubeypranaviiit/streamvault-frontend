@@ -24,7 +24,7 @@ const { setActiveTab } = useDashboard();
     setProgress(data.progress);
 
     setStatus((prev) => {
-      if (prev === "completed") return prev; // 🔒 protect state
+      if (prev === "completed") return prev; 
       if (data.progress < 100) return "processing";
       return prev;
     });
