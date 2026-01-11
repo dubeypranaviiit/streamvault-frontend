@@ -10,42 +10,7 @@ export default function DashboardLayout({
   const { user } = useAuth();
 
   return (
-    // <div className="flex min-h-screen">
-    //   <aside className="w-64 bg-black text-white p-4 border-r border-white/10">
-    //     <Link to="/" className=" block text-lg font-semibold mb-8">StreamVault</Link>
-
-    //     <button
-    //       onClick={() => setActiveTab("videos")}
-    //       className={`block w-full text-left px-3 py-2 rounded mb-2 ${
-    //         activeTab === "videos" ? "bg-zinc-800" : "text-zinc-400"
-    //       }`}
-    //     >
-    //       Dashboard
-    //     </button>
-
-    //     {canUpload && (
-    //       <button
-    //         onClick={() => setActiveTab("upload")}
-    //         className={`block w-full text-left px-3 py-2 rounded mb-2 ${
-    //           activeTab === "upload" ? "bg-zinc-800" : "text-zinc-400"
-    //         }`}
-    //       >
-    //         Upload Video
-    //       </button>
-    //     )}
-
-    //     {user?.role === "admin" && (
-    //       <button className="block w-full text-left px-3 py-2 rounded text-zinc-400">
-    //         Admin Panel
-    //       </button>
-    //     )}
-    //   </aside>
-
-    //   <div className="flex-1 flex flex-col">
-    //     <Topbar />
-    //     <main className="flex-1 p-6">{children}</main>
-    //   </div>
-    // </div>
+  
     <div className="flex min-h-screen bg-zinc-900 text-white">
   <aside className="w-64 bg-zinc-950 text-white p-6 border-r border-zinc-800">
     <Link
