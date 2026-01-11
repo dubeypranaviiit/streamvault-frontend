@@ -21,7 +21,7 @@ export const useSocket = (userId, onProgress, onComplete) => {
     });
 
     socket.on("video-complete", (data) => {
-      completedRef.current = true; // 🔒 lock state
+      completedRef.current = true; 
       onComplete(data);
     });
 
